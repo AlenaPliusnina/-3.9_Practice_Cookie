@@ -8,7 +8,7 @@ const btnSave = document.querySelector('.j-btn-save');
 
 area.value = localStorage.getItem('area');
 
-// При вводе в поле названия города, в cookie добавляется соответствующие пара ключ-значение 
+// При вводе в поле названия города, в localStorage добавляется соответствующие пара ключ-значение 
 // с ввденной полльзователем информацией
 area.oninput = () => {
     localStorage.setItem('area', area.value)
@@ -25,7 +25,7 @@ if (area.value) {
     sectionDelete.classList.add('d-none');
 }
 
-// При нажатии на кнопку "удалить" cookie area удаляется из localStorage, 
+// При нажатии на кнопку "удалить" area удаляется из localStorage, 
 // при этом снова появляется форма ввода города
 btnDelete.onclick = () => {
     localStorage.removeItem('area'); 
@@ -41,7 +41,7 @@ const checkGroup = document.getElementsByName('check-group');
 
 checkbox.value = localStorage.getItem('checkbox');
 
-// Если данные checkbox уже добавлены в cookie,
+// Если данные checkbox уже добавлены в localStorage,
 // то отображаются выбранные пользователем ранее checkbox, 
 // при этом все checkbox становятся не активными
 if (checkbox.value) {
@@ -65,7 +65,7 @@ if (checkbox.value) {
 } 
 
 // При первом нажатии пользователя на кнопку добавляются 
-// данные о выбранных checbox в cookie
+// данные о выбранных checbox в localStorage
 btnSave.onclick = () => {
     if (!checkbox.value) {
         let checked = '';
