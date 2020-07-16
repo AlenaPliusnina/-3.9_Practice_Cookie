@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Work with cookies</title>
+</head>
+<body class="bg-light">
+    <h1 class="d-flex justify-content-center mt-5 j-city-info"></h1>
+    <form class="d-block mt-5 ml-5 w-50 j-form">
+        <div class="form-group">
+          <label for="area">Введите название вашего города:</label>
+          <input class="form-control" id="area" placeholder="Москва">
+        </div>
+    </form>
+
+    <div class="j-delete-section">
+        <h5 class="d-flex justify-content-center mt-3">Если хотите удалить информацию о вашем городе нажмите на кнопку.</h5> 
+        <div class="d-flex justify-content-center mt-3">
+            <button type="button" class="btn btn-outline-danger j-delete-btn">Удалить</button>
+        </div>
+    </div>
+
+    <form class="d-block mt-5 ml-5" id="checkbox">
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="status_1" name="check-group">
+            <label class="form-check-label" for="status_1">не звонить мне</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="status_2" name="check-group">
+            <label class="form-check-label" for="status_2">я прочитал и согласен с правилами пользования сервисом</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="status_3" name="check-group">
+            <label class="form-check-label" for="status_3">я не выбираю эту галочку</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="status_4" name="check-group">
+            <label class="form-check-label" for="status_4">я подтверждаю, что свобода в интернете — это возможность выбирать галочки</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="status_5" name="check-group">
+            <label class="form-check-label" for="status_5">мне больше 12 лет</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="status_6" name="check-group">
+            <label class="form-check-label" for="status_6">это задание выполнено правильно</label>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3 j-btn-save">Сохранить</button>
+    </form>
+  
+    <script src="./script/script.js"></script>
+</body>
+</html>
