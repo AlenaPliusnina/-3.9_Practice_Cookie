@@ -1,4 +1,4 @@
-# C3.9_Practice_Cookie
+# Using cookie. Использование cookie
 
 Описание:
 
@@ -23,4 +23,4 @@
 
 Реализация:
 
-   - https://alenapliusnina.github.io/C3.9_Practice_Cookie/
+   - https://alenapliusnina.github.io/Using_Cookie/
